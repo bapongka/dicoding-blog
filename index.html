@@ -12,11 +12,20 @@
     <header>
       <nav>
         <a href="#"><h1>My Blog</h1></a>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About Me</a></li>
-        </ul>
+
+        <div class="navbar">
+          <input type="checkbox" id="nav-checkbox" />
+          <label for="nav-checkbox" class="nav-toggle">
+            <img src="./assets/images/menu.png" alt="" class="open" />
+            <img src="./assets/images/close.png" alt="" class="close" />
+          </label>
+
+          <ul class="nav-item">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </div>
       </nav>
       <div class="hero">
         <h1>Menjadi Seorang Frontend Developer</h1>
@@ -32,7 +41,7 @@
             setiap tahun kandidatnya meningkat. Maklum saja, gaji dan jenjang karier yang ditawarkan sangat menggiurkan. Tak heran jika perusahaan selalu melakukan seleksi ketat untuk menjaring calon front end developer. Bagi kamu yang
             tertarik berkarier di bidang ini, kamu harus memiliki sejumlah keahlian khusus.
           </p>
-          <button><a href="">Baca Selengkapnya</a></button>
+          <button><a href="#">Baca Selengkapnya</a></button>
         </article>
         <article class="card">
           <h1>Apa itu CDN?</h1>
@@ -40,7 +49,7 @@
             Content Delivery Network atau yang biasa disebut CDN adalah bagian penting dari suatu website ataupun aplikasi. Konten dari sebuah website yang biasa Anda lihat di handphone, baik itu video, gambar, audio, atau apa pun jenis
             kontennya, sangat besar kemungkinan terkirim menggunakan CDN.
           </p>
-          <button><a href="">Baca Selengkapnya</a></button>
+          <button><a href="#">Baca Selengkapnya</a></button>
         </article>
         <article class="card">
           <h1>Apa perbedaan Front End dengan Back End</h1>
@@ -48,14 +57,16 @@
             Front End dan Back End adalah dua hal yang berkaitan dengan bagaimana sebuah website maupun aplikasi dapat bekerja dan diakses oleh pengguna. Berkaitan dengan proses web development, front end adalah apa yang pengguna lihat pada
             tampilan sebuah website. Sedangkan back end adalah sistem di balik layar yang mengolah database dan juga server.
           </p>
-          <button><a href="">Baca Selengkapnya</a></button>
+          <button><a href="#">Baca Selengkapnya</a></button>
         </article>
       </div>
 
-      <aside class="profile">
+      <aside class="profile" id="profile">
         <img src="./assets/images/profile.jpg" alt="" />
-        <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eos numquam error tempora cum id dolorum provident, esse beatae a et temporibus accusantium, nihil quia reprehenderit nemo soluta.</p>
+        <!-- <h1>About Me</h1> -->
+        <p>Hallo, perkenalkan saya Ridho Rakhaman</p>
+        <p>Saat ini saya sedang mempelajari tentang HTML, CSS, dan JavaScript</p>
+        <p>Saya suka mengupload apa yang saya buat di github</p>
       </aside>
     </main>
 
